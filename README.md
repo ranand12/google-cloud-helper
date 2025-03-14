@@ -12,10 +12,15 @@ A Chrome extension that helps users transitioning from other cloud providers to 
 ## Installation
 
 1. Clone this repository
-2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable "Developer mode" in the top right corner
-4. Click "Load unpacked" and select the project directory
-5. The extension should now be installed and active
+2. Get your API key:
+   - Go to [Google AI Studio](https://aistudio.google.com/apikey)
+   - Click on "Create API key"
+   - Copy the generated API key
+   - Add the API key to the extension configuration (details in the Development section)
+3. Open Chrome and navigate to `chrome://extensions/`
+4. Enable "Developer mode" in the top right corner
+5. Click "Load unpacked" and select the project directory
+6. The extension should now be installed and active
 
 ## Usage
 
@@ -38,11 +43,28 @@ A Chrome extension that helps users transitioning from other cloud providers to 
 
 ## Development
 
+### API Key Configuration
+
+After obtaining your API key from Google AI Studio:
+
+1. Open `background.js` in your code editor
+2. Locate the API key configuration section (usually near the top of the file)
+3. Replace the placeholder value with your actual API key:
+   ```javascript
+   const API_KEY = 'YOUR_GEMINI_API_KEY_HERE';
+   ```
+
+### Making Changes
+
 To modify this extension:
 
 1. Edit the files as needed
 2. Reload the extension in `chrome://extensions/` by clicking the refresh icon
 3. Test your changes
+
+### Security Note
+
+Never commit your API key to a public repository. Consider using environment variables or a secure configuration method for production deployments.
 
 ## License
 
