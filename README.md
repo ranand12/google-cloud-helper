@@ -2,6 +2,8 @@
 
 A Chrome extension that helps users transitioning from other cloud providers to Google Cloud Platform by providing equivalent services and documentation.
 
+![Google Cloud Helper Extension Demo](find.gif)
+
 ## Features
 
 - Right-click on any cloud service term and select "Find the Google Cloud equivalent" to instantly get the GCP equivalent product
