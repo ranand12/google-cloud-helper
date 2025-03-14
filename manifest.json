@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Google Cloud Helper",
+  "version": "1.0",
+  "description": "Compares other cloud providers' services with Google Cloud equivalents",
+  "permissions": ["activeTab", "scripting", "storage", "tabs", "contextMenus"],
+  "host_permissions": ["https://*.googleapis.com/", "https://www.google.com/"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+} 
